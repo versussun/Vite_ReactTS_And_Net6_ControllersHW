@@ -23,14 +23,14 @@ WORKDIR /src
 COPY ["Vite_ReactTS_And_Net6_ControllersHW/Vite_ReactTS_And_Net6_ControllersHW.csproj", "Vite_ReactTS_And_Net6_ControllersHW/"]
 RUN dotnet restore "Vite_ReactTS_And_Net6_ControllersHW/Vite_ReactTS_And_Net6_ControllersHW.csproj"
 COPY . .
+#
 WORKDIR "/src/Vite_ReactTS_And_Net6_ControllersHW/ClientApp"
-
 RUN npm install -g typescript
-RUN npm install -g vite
+#RUN npm install -g vite
 RUN npm i
 
 WORKDIR "/src/Vite_ReactTS_And_Net6_ControllersHW"
-RUN dotnet build "Vite_ReactTS_And_Net6_ControllersHW.csproj" -c Release -o /app/build
+#RUN dotnet build "Vite_ReactTS_And_Net6_ControllersHW.csproj" -c Release -o /app/build
 
 FROM build AS publish
 RUN dotnet publish "Vite_ReactTS_And_Net6_ControllersHW.csproj" -c Release -o /app/publish /p:UseAppHost=false

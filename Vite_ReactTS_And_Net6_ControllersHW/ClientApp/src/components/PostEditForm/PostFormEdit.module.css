@@ -1,0 +1,10 @@
+.edit_form{
+    margin: 1em auto 0 auto;
+    width: 40em;
+    background-color: aliceblue;
+    font-size: 2em;
+}
+.submit_button{
+    margin-left: auto;
+    margin-right: 0;
+}

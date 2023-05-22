@@ -1,0 +1,21 @@
+.body{
+    margin: 0 auto 0 auto;
+}
+.headerTitle{
+    font-size: 5em;
+}
+.buttons{
+    grid-area: buttons;
+    margin: auto 0 0 auto;
+}
+
+header{
+    height: 18vh;
+    border-style: solid;
+    border-color: gray;
+    box-shadow: 10px 5px 5px gray ;
+    display: grid;
+    grid-template-areas:
+    "title title"
+    "title buttons";
+}

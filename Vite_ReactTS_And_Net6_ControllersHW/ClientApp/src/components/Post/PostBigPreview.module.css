@@ -1,0 +1,38 @@
+.body{
+    margin: 1em;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "id id id"
+    "preview title title"
+    "preview description description"
+    ". author .";
+    background-color: #ecffff;
+}
+.preview{
+    grid-area: preview;
+    margin: 1em;
+}
+.title{
+    grid-area: title;
+    font-size: 10rem;
+    margin: auto auto;
+}
+.id{
+    grid-area: id;
+    margin-left: auto;
+    margin-right: 1em;
+    color: grey;
+}
+.description{
+    grid-area: description ;
+    margin-top: 1em;
+    text-indent: 5em;
+    font-size: 2em;
+}
+.author{
+    grid-area: author;
+    font-style: italic;
+    font-weight: bold;
+}
